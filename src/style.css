@@ -1,0 +1,105 @@
+body {
+  text-align: center;
+  font-family: "Nanum Gothic", sans-serif;
+  padding: 50px;
+  background-color: #f9f7fe;
+  color: #113f67;
+}
+
+form {
+  padding-top: 30px;
+}
+
+h1 {
+  font-size: 50px;
+  padding-bottom: 0;
+}
+
+h4 {
+  padding: 0;
+  font-size: 12px;
+  position: relative;
+  margin-top: -10px;
+}
+
+h2 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 50px;
+  color: #38598b;
+}
+
+button {
+  font-size: 8px;
+  display: block;
+  padding: 20px 0 0 0;
+}
+
+h6 {
+  font-size: 10px;
+}
+
+.container {
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  display: block;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 4px 8px #6c5b7c;
+  max-width: 400px;
+}
+
+.form-control {
+  border-radius: 2rem;
+}
+
+.btn {
+  --bs-btn-border-radius: 2rem;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #38598b;
+  --bs-btn-border-color: #a2a8d3;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #a2a8d3;
+  --bs-btn-hover-border-color: #a2a8d3;
+}
+
+.mb-3 {
+  margin: 0 0 0 20px;
+}
+
+.search-result {
+  background: #f9f7fe;
+  display: block;
+  margin: 40px 20px;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 4px 8px #dcd6e2;
+  max-width: 340px;
+}
+
+.btn-outline-info {
+  padding: 1px 2px 1px 2px;
+  font-size: 10px;
+  color: #38598b;
+  border: none;
+  position: relative;
+  left: 105px;
+  top: -7px;
+}
+
+.btn-outline-info:hover {
+  color: #38598b;
+  background-color: #dfe9f3;
+  border-color: none;
+}
+
+.units {
+  position: relative;
+  top: -20px;
+  font-size: 20px;
+}
