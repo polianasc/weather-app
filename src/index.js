@@ -4,6 +4,9 @@ let now = new Date();
 let weekDay = document.querySelector("#day-time");
 let hours = now.getHours();
 let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 let days = [
   "Sunday",
   "Monday",
