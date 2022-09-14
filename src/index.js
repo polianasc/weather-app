@@ -50,6 +50,9 @@ function displayWeather(response) {
   document.querySelector("#day-time").innerHTML = formateDate(
     response.data.dt * 1000
   );
+  document.querySelector("#wind-speed").innerHTML = `${Math.round(
+    response.data.wind.speed
+  )} km/h`;
 
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
