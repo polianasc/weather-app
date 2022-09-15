@@ -31,7 +31,7 @@
     <div class="container">
       <form id="search-city">
         <div class="row">
-          <div class="col-6">
+          <div class="col-7">
             <div class="mb-3">
               <input
                 type="search"
@@ -45,12 +45,12 @@
           </div>
           <div class="col-2">
             <button id="search-button" type="submit" class="btn btn-primary">
-              🔍
+              search
             </button>
           </div>
           <div class="col-2">
             <button id="current-button" type="submit" class="btn btn-primary">
-              Current
+              current location
             </button>
           </div>
         </div>
@@ -59,18 +59,18 @@
       <h1 id="city-result"></h1>
       <h5 id="day-time"></h5>
       <p id="description"></p>
-      <img src="" id="icon" alt="" />
+      <img src="" id="icon" alt="" width="150" />
       <h3>
         <span id="temperature"></span
         ><span class="units"
-          ><a href="#" id="celsius-link">°C </a> |
+          ><a href="#" id="celsius-link" class="active">°C </a> |
           <a href="#" id="fahrenheit-link">°F </a>
         </span>
       </h3>
       <div class="search-result">
         <div class="row">
           <div class="col-7">Feels like</div>
-          <div class="col-5" id="feels-like">°C</div>
+          <div class="col-5" id="feels-like"></div>
 
           <div class="col-7">Min / Max</div>
           <div class="col-5">

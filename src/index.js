@@ -35,13 +35,13 @@ function displayWeather(response) {
     response.data.weather[0].main;
   document.querySelector("#feels-like").innerHTML = `${Math.round(
     response.data.main.feels_like
-  )}°C`;
+  )}°`;
   document.querySelector("#max-temp").innerHTML = `${Math.round(
     response.data.main.temp_max
-  )}°C`;
+  )}°`;
   document.querySelector("#min-temp").innerHTML = `${Math.round(
     response.data.main.temp_min
-  )}°C /`;
+  )}°|`;
   document.querySelector(
     "#humidity"
   ).innerHTML = `${response.data.main.humidity}%`;
