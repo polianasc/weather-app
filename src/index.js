@@ -26,8 +26,6 @@ function formateDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-// City Heading e Searching City using API
-
 function displayWeather(response) {
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#temperature").innerHTML =
@@ -76,8 +74,6 @@ function submitCity(event) {
   searchCity(city);
 }
 
-// Current geolocation
-
 function searchLocation(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
@@ -93,8 +89,6 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-// fahrenheit
-
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -103,8 +97,6 @@ function displayFahrenheitTemperature(event) {
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
-
-// Celsius
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
@@ -130,6 +122,6 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-//search action
+// Search action
 
 searchCity("Lisbon");
