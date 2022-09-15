@@ -30,6 +30,7 @@ img {
 h3 {
   font-size: 50px;
   color: #38598b;
+  text-decoration: none;
 }
 
 button {
@@ -105,8 +106,8 @@ h6 {
   font-size: 20px;
 }
 
-.fahrenheit {
-  position: relative;
-  top: -20px;
-  font-size: 20px;
+a {
+  color: #38598b;
+  text-decoration: none;
+  cursor: default;
 }
