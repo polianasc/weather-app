@@ -102,6 +102,14 @@ function displayFahrenheitTemperature(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
+// Celsius
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
 // Call to action - gobal variables
 
 let celsiusTemperature = null;
@@ -114,6 +122,9 @@ currentButton.addEventListener("click", getCurrentLocation);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 //search action
 
