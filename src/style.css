@@ -104,3 +104,9 @@ h6 {
   top: -20px;
   font-size: 20px;
 }
+
+.fahrenheit {
+  position: relative;
+  top: -20px;
+  font-size: 20px;
+}
