@@ -55,33 +55,49 @@
           </div>
         </div>
       </form>
-      <br />
-      <h1 id="city-result"></h1>
-      <h5 id="day-time"></h5>
-      <p id="description"></p>
-      <img src="" id="icon" alt="" width="150" />
-      <h3>
-        <span id="temperature"></span
-        ><span class="units"
-          ><a href="#" id="celsius-link" class="active">°C </a> |
-          <a href="#" id="fahrenheit-link">°F </a>
-        </span>
-      </h3>
-      <div class="search-result">
+      <div class="city-day-temperature">
         <div class="row">
-          <div class="col-7">Feels like</div>
-          <div class="col-5" id="feels-like"></div>
-
-          <div class="col-7">Min / Max</div>
-          <div class="col-5">
-            <span id="min-temp"></span> <span id="max-temp"> / </span>
+          <div class="col-6">
+            <h1 id="city-result"></h1>
+            <h5 id="day-time"></h5>
+            <p id="description"></p>
+            <div class="search-result-temperature">
+              <div class="row">
+                <div class="col-6">
+                  <img src="" id="icon" alt="" width="90" />
+                </div>
+                <div class="col-6">
+                  <span id="temperature"></span
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C </a> |<a
+                      href="#"
+                      id="fahrenheit-link"
+                      >°F
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="col-6">
+            <div class="search-result">
+              <div class="row">
+                <div class="col-7">Feels like</div>
+                <div class="col-5" id="feels-like"></div>
 
-          <div class="col-7">Humidity</div>
-          <div class="col-5" id="humidity">%</div>
+                <div class="col-7">Min / Max</div>
+                <div class="col-5">
+                  <span id="min-temp"></span> <span id="max-temp"> / </span>
+                </div>
 
-          <div class="col-7">Wind Speed</div>
-          <div class="col-5" id="wind-speed">km/h</div>
+                <div class="col-7">Humidity</div>
+                <div class="col-5" id="humidity">%</div>
+
+                <div class="col-7">Wind Speed</div>
+                <div class="col-5" id="wind-speed">km/h</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <hr />

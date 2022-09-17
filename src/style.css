@@ -12,26 +12,20 @@ form {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 25px;
   padding-bottom: 0;
-  color: white;
 }
 
-h4 {
+h5 {
   padding: 0;
-  font-size: 12px;
+  font-size: 10px;
   position: relative;
-  margin-top: -10px;
+  margin-top: 5px;
 }
 
 p {
   margin-bottom: 0;
-}
-
-h3 {
-  font-size: 50px;
-  color: #38598b;
-  text-decoration: none;
+  font-size: 15px;
 }
 
 a {
@@ -89,10 +83,11 @@ h6 {
 .search-result {
   background: #f9f7fe;
   display: block;
-  margin: 20px 20px;
-  padding: 20px;
-  border-radius: 30px;
+  margin: 10px 10px;
+  padding: 8px;
+  border-radius: 20px;
   max-width: 340px;
+  font-size: 10px;
 }
 
 .btn-outline-info {
@@ -114,5 +109,11 @@ h6 {
 .units {
   position: relative;
   top: -20px;
-  font-size: 20px;
+  font-size: 10px;
+}
+
+.search-result-temperature {
+  font-size: 30px;
+  color: #38598b;
+  text-decoration: none;
 }
