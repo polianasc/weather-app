@@ -107,8 +107,8 @@ function displayWeather(response) {
     response.data.dt * 1000
   );
   document.querySelector("#wind-speed").innerHTML = `${Math.round(
-    response.data.wind.speed
-  )} m/h`;
+    response.data.wind.speed * 3.6
+  )} km/h`;
 
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
