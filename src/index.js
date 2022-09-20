@@ -88,7 +88,7 @@ function displayWeather(response) {
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#temperature").innerHTML =
     Math.round(celsiusTemperature);
-  document.querySelector("#city-result").innerHTML = response.data.name;
+  document.querySelector("#city-result").innerHTML = `📍${response.data.name}`;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#feels-like").innerHTML = `${Math.round(
@@ -99,7 +99,7 @@ function displayWeather(response) {
   )}°`;
   document.querySelector("#min-temp").innerHTML = `${Math.round(
     response.data.main.temp_min
-  )}°|`;
+  )}° | `;
   document.querySelector(
     "#humidity"
   ).innerHTML = `${response.data.main.humidity}%`;
@@ -108,7 +108,7 @@ function displayWeather(response) {
   );
   document.querySelector("#wind-speed").innerHTML = `${Math.round(
     response.data.wind.speed
-  )} km/h`;
+  )} m/h`;
 
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(

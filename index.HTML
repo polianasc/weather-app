@@ -31,7 +31,7 @@
     <div class="container">
       <form id="search-city">
         <div class="row">
-          <div class="col-7">
+          <div class="col-9">
             <div class="mb-3">
               <input
                 type="search"
@@ -56,47 +56,39 @@
         </div>
       </form>
       <div class="city-day-temperature">
-        <div class="row">
-          <div class="col-6">
-            <h1 id="city-result"></h1>
-            <h5 id="day-time"></h5>
-            <p id="description"></p>
-            <div class="search-result-temperature">
-              <div class="row">
-                <div class="col-6">
-                  <img src="" id="icon" alt="" width="90" />
-                </div>
-                <div class="col-6">
-                  <span id="temperature"></span
-                  ><span class="units"
-                    ><a href="#" id="celsius-link" class="active">°C </a>
-                  </span>
-                </div>
-              </div>
+        <h1 id="city-result"></h1>
+        <h5 id="day-time"></h5>
+        <p id="description"></p>
+        <div class="search-result-temperature">
+          <div class="row">
+            <div class="col-6">
+              <img src="" id="icon" alt="" width="90" />
             </div>
-          </div>
-          <div class="col-6">
-            <div class="search-result">
-              <div class="row">
-                <div class="col-7">Feels like</div>
-                <div class="col-5" id="feels-like"></div>
-
-                <div class="col-7">Min / Max</div>
-                <div class="col-5">
-                  <span id="min-temp"></span> <span id="max-temp"> / </span>
-                </div>
-
-                <div class="col-7">Humidity</div>
-                <div class="col-5" id="humidity">%</div>
-
-                <div class="col-7">Wind Speed</div>
-                <div class="col-5" id="wind-speed">km/h</div>
-              </div>
+            <div class="col-6">
+              <span id="temperature"></span
+              ><span class="units" id="celsius-link">°C </span>
             </div>
           </div>
         </div>
+
+        <div class="search-result">
+          <div class="row">
+            <div class="col-3">Feels like</div>
+            <div class="col-3" id="feels-like"></div>
+          <div class="col-3">Humidity</div>
+          <div class="col-3" id="humidity"></div>
+          <div class="col-3">Min | Max</div>
+            <div class="col-3">
+              <span id="min-temp"></span><span id="max-temp"></span>
+            </div>
+
+          <div class="col-3">Wind Speed</div>
+          <div class="col-3" id="wind-speed">m/h</div>
+        </div>
       </div>
-      <div class="weather-forecast" id="forecast"></div>
+      <div class="forecast-container">
+        <div class="weather-forecast" id="forecast"></div>
+      </div>
       <hr />
       <h6>
         <span>🧘‍♀️ </span>
