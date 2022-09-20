@@ -15,8 +15,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,600&display=swap"
       rel="stylesheet"
     />
 
@@ -31,7 +36,7 @@
     <div class="container">
       <form id="search-city">
         <div class="row">
-          <div class="col-9">
+          <div class="col-12">
             <div class="mb-3">
               <input
                 type="search"
@@ -45,42 +50,50 @@
           </div>
           <div class="col-2">
             <button id="search-button" type="submit" class="btn btn-primary">
-              search
+              Search
             </button>
           </div>
-          <div class="col-2">
+          <div class="col-6">
             <button id="current-button" type="submit" class="btn btn-primary">
-              current location
+              Current Location
             </button>
           </div>
         </div>
       </form>
+      <hr />
       <div class="city-day-temperature">
-        <h1 id="city-result"></h1>
-        <h5 id="day-time"></h5>
-        <p id="description"></p>
-        <div class="search-result-temperature">
-          <div class="row">
-            <div class="col-6">
-              <img src="" id="icon" alt="" width="90" />
-            </div>
-            <div class="col-6">
-              <span id="temperature"></span
-              ><span class="units" id="celsius-link">°C </span>
-            </div>
+        <div class="row">
+          <div class="col-4">
+            <div id="city-result" class="city-temperature"></div>
+            <div id="day-time" class="day-time-description"></div>
+            <div class="search-result-temperature"></div>
+          </div>
+          <div class="col-4">
+            <img
+              src=""
+              id="icon"
+              alt=""
+              width="100"
+              class="icon-search-temperature"
+            />
+          </div>
+          <div class="col-4">
+            <span id="temperature" class="city-temperature"> </span>
+            <span class="units" id="celsius-link">°C </span>
+            <div id="description" class="day-time-description"></div>
           </div>
         </div>
-
-        <div class="search-result">
-          <div class="row">
-            <div class="col-3">Feels like</div>
-            <div class="col-3" id="feels-like"></div>
+      </div>
+      <div class="search-result">
+        <div class="row">
+          <div class="col-3">Feels like</div>
+          <div class="col-3" id="feels-like"></div>
           <div class="col-3">Humidity</div>
           <div class="col-3" id="humidity"></div>
           <div class="col-3">Min | Max</div>
-            <div class="col-3">
-              <span id="min-temp"></span><span id="max-temp"></span>
-            </div>
+          <div class="col-3">
+            <span id="min-temp"></span><span id="max-temp"></span>
+          </div>
 
           <div class="col-3">Wind Speed</div>
           <div class="col-3" id="wind-speed">m/h</div>

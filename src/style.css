@@ -1,31 +1,15 @@
 body {
   text-align: center;
-  font-family: "Nanum Gothic", sans-serif;
-  padding: 50px;
-  background-color: #f9f7fe;
-  color: #113f67;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 10px;
+  background-color: rgb(249, 247, 254);
+  color: rgb(39, 33, 66);
 }
 
-form {
+https://www.weather.shecodes.io/
+  form {
   padding-top: 30px;
   margin: 0px;
-}
-
-h1 {
-  font-size: 25px;
-  padding-bottom: 0;
-}
-
-h5 {
-  padding: 0;
-  font-size: 10px;
-  position: relative;
-  margin-top: 5px;
-}
-
-p {
-  margin-bottom: 0;
-  font-size: 15px;
 }
 
 a {
@@ -38,86 +22,66 @@ h6 {
   font-size: 12px;
 }
 
+hr {
+  color: rgb(230, 221, 252);
+}
 .container {
-  background: linear-gradient(
-    109.6deg,
-    rgb(137, 191, 221) 11.2%,
-    rgb(150, 144, 204) 100.2%
-  );
+  background: white;
   display: block;
   margin: 10px auto;
   padding: 20px;
-  border-radius: 30px;
-  box-shadow: 2px 4px 8px #6c5b7c;
+  border-radius: 13px;
+  box-shadow: 2px 4px 8px rgb(243, 240, 249);
   max-width: 400px;
-}
-
-.form-control {
-  border-radius: 2rem;
-}
-
-.btn {
-  --bs-btn-border-radius: 2rem;
-  font-size: 13px;
 }
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #bbc8dc;
-  --bs-btn-border-color: #a2a8d3;
+  --bs-btn-bg: #885df1;
+  --bs-btn-border-color: #885df1;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #a2a8d3;
-  --bs-btn-hover-border-color: #a2a8d3;
-}
-
-.mb-3 {
-  margin: 0 0 0 20px;
+  --bs-btn-hover-bg: #875df12c;
+  --bs-btn-hover-border-color: #875df12c;
+  --bs-btn-font-size: 13px;
+  --bs-btn-padding-x: 15px;
+  --bs-btn-padding-y: 11px;
 }
 
 .search-result {
-  background: #f9f7fe;
-  display: block;
-  margin: 10px 10px;
-  padding: 8px;
-  border-radius: 20px;
-  max-width: 340px;
+  background: #875df12c;
+  padding: 13px 10px;
+  border-radius: 13px;
   font-size: 11px;
 }
 
-.btn-outline-info {
-  padding: 1px 2px 1px 2px;
-  font-size: 10px;
-  color: #38598b;
-  border: none;
-  position: relative;
-  left: 105px;
-  top: -7px;
+.city-day-temperature {
+  padding: 0px 25px;
 }
 
-.btn-outline-info:hover {
-  color: #38598b;
-  background-color: #dfe9f3;
-  border-color: none;
+.city-temperature {
+  font-size: 30px;
+}
+
+.icon-search-temperature {
+  position: relative;
+  top: -10px;
+}
+
+.day-time-description {
+  font-size: 13px;
 }
 
 .units {
   position: relative;
-  top: -20px;
+  top: -13px;
   font-size: 10px;
 }
 
-.search-result-temperature {
-  font-size: 30px;
-  color: #38598b;
-}
-
 .forecast-container {
-  background: #f9f7fe;
-  display: block;
-  margin: 10px 10px;
-  padding: 10px;
-  border-radius: 20px;
-  max-width: 340px;
+  background: #875df12c;
+  padding: 13px 10px;
+  border-radius: 15px;
+  margin-top: 13px;
 }
 
 .weather-forecast {
@@ -129,7 +93,7 @@ h6 {
 }
 
 .weather-forecast-temperature {
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .weather-forecast-temperature-min {

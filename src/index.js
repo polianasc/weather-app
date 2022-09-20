@@ -88,7 +88,7 @@ function displayWeather(response) {
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#temperature").innerHTML =
     Math.round(celsiusTemperature);
-  document.querySelector("#city-result").innerHTML = `📍${response.data.name}`;
+  document.querySelector("#city-result").innerHTML = `${response.data.name}`;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#feels-like").innerHTML = `${Math.round(
