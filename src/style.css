@@ -6,8 +6,7 @@ body {
   color: rgb(39, 33, 66);
 }
 
-https://www.weather.shecodes.io/
-  form {
+form {
   padding-top: 30px;
   margin: 0px;
 }
@@ -30,7 +29,7 @@ hr {
   display: block;
   margin: 10px auto;
   padding: 20px;
-  border-radius: 13px;
+  border-radius: 11px;
   box-shadow: 2px 4px 8px rgb(243, 240, 249);
   max-width: 400px;
 }
@@ -50,7 +49,7 @@ hr {
 .search-result {
   background: #875df12c;
   padding: 13px 10px;
-  border-radius: 13px;
+  border-radius: 11px;
   font-size: 11px;
 }
 
@@ -80,7 +79,7 @@ hr {
 .forecast-container {
   background: #875df12c;
   padding: 13px 10px;
-  border-radius: 15px;
+  border-radius: 11px;
   margin-top: 13px;
 }
 
